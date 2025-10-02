@@ -1,0 +1,312 @@
+.alpha-teen {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+.teen-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.teen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: rgba(26, 31, 79, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 20px 30px;
+  border-radius: 20px;
+  border: 3px solid var(--cosmic-violet);
+}
+
+.teen-title {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, var(--cosmic-violet), var(--cosmic-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  flex: 1;
+  text-align: center;
+}
+
+.teen-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.exploration-section {
+  background: rgba(26, 31, 79, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 25px;
+  border: 3px solid rgba(99, 102, 241, 0.5);
+}
+
+.section-title {
+  font-size: 2rem;
+  color: var(--cosmic-violet);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: var(--cosmic-yellow);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.challenge-container {
+  max-width: 700px;
+  margin: 0 auto;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.challenge-card {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(139, 92, 246, 0.3));
+  backdrop-filter: blur(10px);
+  padding: 50px 40px;
+  border-radius: 25px;
+  border: 3px solid var(--cosmic-violet);
+  width: 100%;
+  box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+}
+
+.challenge-category {
+  font-size: 1.5rem;
+  color: var(--cosmic-yellow);
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.challenge-question {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.4;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.challenge-reward {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--cosmic-yellow);
+  margin-bottom: 40px;
+}
+
+.swipe-buttons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.swipe-btn {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.swipe-left {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  border: 3px solid #991b1b;
+}
+
+.swipe-right {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  border: 3px solid #166534;
+}
+
+.swipe-icon {
+  font-size: 2rem;
+}
+
+.progress-indicator {
+  text-align: center;
+  color: var(--cosmic-violet);
+  font-size: 1.1rem;
+}
+
+.result-card {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.4), rgba(139, 92, 246, 0.4));
+  backdrop-filter: blur(10px);
+  padding: 60px 40px;
+  border-radius: 25px;
+  text-align: center;
+  width: 100%;
+}
+
+.result-card.correct {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.4), rgba(22, 163, 74, 0.4));
+  border: 3px solid #22c55e;
+}
+
+.result-card.incorrect {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.4), rgba(220, 38, 38, 0.4));
+  border: 3px solid #ef4444;
+}
+
+.result-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.result-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.result-explanation {
+  font-size: 1.3rem;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.points-earned {
+  font-size: 2rem;
+  color: var(--cosmic-yellow);
+  font-weight: bold;
+}
+
+.roadmap-section {
+  background: rgba(26, 31, 79, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 25px;
+  border: 3px solid rgba(139, 92, 246, 0.5);
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.roadmap-item {
+  background: rgba(99, 102, 241, 0.2);
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid var(--cosmic-violet);
+  transition: all 0.3s ease;
+}
+
+.roadmap-item.completed {
+  background: rgba(34, 197, 94, 0.2);
+  border-color: #22c55e;
+}
+
+.roadmap-item.active {
+  background: rgba(251, 191, 36, 0.2);
+  border-color: var(--cosmic-yellow);
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+}
+
+.roadmap-item.locked {
+  background: rgba(75, 85, 99, 0.2);
+  border-color: #6b7280;
+  opacity: 0.6;
+}
+
+.roadmap-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.roadmap-title {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.roadmap-status {
+  font-size: 1.5rem;
+}
+
+.achievements-section {
+  background: rgba(26, 31, 79, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 25px;
+  border: 3px solid rgba(251, 191, 36, 0.5);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.achievement-badge {
+  background: rgba(251, 191, 36, 0.2);
+  padding: 25px 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--cosmic-yellow);
+  border: 2px solid var(--cosmic-gold);
+}
+
+.achievement-badge.earned {
+  box-shadow: 0 5px 20px rgba(251, 191, 36, 0.4);
+}
+
+.achievement-badge.locked {
+  background: rgba(75, 85, 99, 0.2);
+  color: #9ca3af;
+  border-color: #6b7280;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .teen-title {
+    font-size: 1.8rem;
+  }
+
+  .challenge-question {
+    font-size: 1.4rem;
+    min-height: 100px;
+  }
+
+  .swipe-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .swipe-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .roadmap-grid,
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
